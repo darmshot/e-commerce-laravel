@@ -22,7 +22,7 @@ Typical store based on laravel.
 10. [ ] Customers
     1. [ ] Roles
 11. [ ] Users
-    1. Roles
+    1. [ ] Roles
 12. [ ] Pages module
 13. [ ] Localization
 14. [ ] Regions
@@ -44,4 +44,5 @@ Typical store based on laravel.
        1. [ ] Order manage
 21. [ ] Customer panel
     1. [ ] Order history
+22. [ ] Catalog Product Filters
 
