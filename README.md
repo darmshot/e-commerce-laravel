@@ -19,7 +19,7 @@ Typical store based on laravel.
 8. [ ] Setup Deploy
     1. [ ] Setup GitHub actions
 9. [ ] Setup authentication customers
-10. Customers
+10. [ ] Customers
     1. [ ] Roles
 11. [ ] Users
     1. Roles
