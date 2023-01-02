@@ -23,6 +23,7 @@ e-commerce store based on laravel.
 4. [ ] Customers
     1. [ ] Setup authentication customers
     2. [ ] Roles
+    3. [ ] Customer panel (front)
 5. [ ] Users
     1. [ ] Roles
 6. [ ] Pages module
@@ -35,16 +36,12 @@ e-commerce store based on laravel.
     2. [ ] Products
     3. [ ] Product Attributes
 12. [ ] Search (Meilisearch engine)
+    1. [ ] Catalog Products
+    2. [ ] Pages
 13. [ ] Checkout
 14. [ ] Orders
-    1. [ ] Front
-        1. [ ] Order Page
-            1. [ ] Product list
-            2. [ ] Deliveries
-            3. [ ] Payments
-    2. [ ] Admin
-        1. [ ] Order manage
-15. [ ] Customer panel
-    1. [ ] Order history
-16. [ ] Catalog Product Filters
+    1. [ ] Deliveries
+    2. [ ] Payments
+    3. [ ] Order history
+15. [ ] Catalog Product Filters
 
