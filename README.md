@@ -1,6 +1,6 @@
 # e-commerce-laravel
 
-Typical store based on laravel.  
+e-commerce store based on laravel.
 
 ## Plan
 1. [x] Install Laravel Project
