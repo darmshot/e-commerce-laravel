@@ -9,7 +9,7 @@ e-commerce store based on laravel.
     3. [x] Filament (admin panel)
     4. [x] Telescope
     5. [x] Octane (swoole)
-    6. [ ] Ide-helper
+    6. [x] Ide-helper
 2. [ ] Setup Dockerfile
     1. [ ] PHP environment
     2. [ ] Setup schedule
