@@ -7,7 +7,7 @@ e-commerce store based on laravel.
 2. [x] Install Breeze api
 3. [x] Install Filament (admin panel)
 4. [x] Install Telescope
-5. [ ] Install Octane
+5. [x] Install Octane (swoole)
 6. [ ] Install Ide-helper
 7. [ ] Setup Dockerfile
    1. [ ] PHP environment
