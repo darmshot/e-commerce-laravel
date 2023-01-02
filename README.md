@@ -5,7 +5,7 @@ Typical store based on laravel.
 ## Plan
 1. [x] Install Laravel Project
 2. [x] Install Breeze api
-3. [ ] Install Filament (admin panel)
+3. [x] Install Filament (admin panel)
 4. [ ] Install Telescope
 5. [ ] Install Octane
 6. [ ] Install Ide-helper
