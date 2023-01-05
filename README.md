@@ -11,7 +11,7 @@ e-commerce store based on laravel.
     5. [x] Octane (swoole)
     6. [x] Ide-helper
 2. [ ] Setup Dockerfile
-    1. [ ] PHP environment
+    1. [x] PHP environment
     2. [ ] Setup schedule
     3. [ ] Setup sockets (pusher)
     4. [ ] Setup queue
