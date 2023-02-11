@@ -38,39 +38,21 @@ RUN apt-get update \
     && apt-get update \
     && apt-get install -y yarn \
     && apt-get install -y mysql-client \
+    && apt-get install -y postgresql-client-$POSTGRES_VERSION \
     && apt-get -y autoremove \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN setcap "cap_net_bind_service=+ep" /usr/bin/php8.1
 
-RUN groupadd --force -g $WWWGROUP app
-RUN useradd -ms /bin/bash --no-user-group -g $WWWGROUP -u 1337 app
+RUN groupadd --force -g $WWWGROUP sail
+RUN useradd -ms /bin/bash --no-user-group -g $WWWGROUP -u 1337 sail
 
-COPY ./docker/production/app/start-container /usr/local/bin/start-container
-COPY ./docker/production/app/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
-COPY ./docker/production/app/php.ini /etc/php/8.1/cli/conf.d/99-app.ini
-COPY ./ /var/www/html
-
+COPY start-container /usr/local/bin/start-container
+COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+COPY php.ini /etc/php/8.1/cli/conf.d/99-sail.ini
 RUN chmod +x /usr/local/bin/start-container
 
-RUN chown -R app:app /var/www/html
-
-RUN export COMPOSER_ALLOW_SUPERUSER=1
-RUN composer install --no-interaction --optimize-autoloader
-
-# Clear all cache
-RUN php artisan optimize:clear
-# Optimizing Configuration loading
-RUN php artisan config:cache
-# Optimizing Events loading
-RUN php artisan event:cache
-# Optimizing Route loading
-RUN php artisan route:cache
-# Optimizing View loading
-RUN php artisan view:cache
-
-VOLUME /var/www/html/storage
 
 EXPOSE 8000
 
